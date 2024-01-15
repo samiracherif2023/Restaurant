@@ -1,0 +1,16 @@
+
+  <div class="container">
+      <div class="row" style="margin-top: 150px;">
+          <div class="col-xl-5">
+              <div class="section_tittle">
+                  <h2>Nos Chefs</h2>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+       
+          <div class="col-sm-6 col-lg-4" *ngFor="let chef of chefs">
+            <img src="assets/img/team/chefs_1.png" alt="">
+             <app-chef [chefInput]="chef"></app-chef> 
+          </div>
+  </div>

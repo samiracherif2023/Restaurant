@@ -1,0 +1,19 @@
+<section class="exclusive_item_part blog_item_section">
+    <div class="container">
+        <div class="row" style="margin-top: 150px;">
+            <div class="col-xl-5">
+                <div class="section_tittle">
+                   
+                    <h2>Nos Plats</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-lg-4" *ngFor ="let plat of platsTab">
+                <img src="assets/img/food_item/food_item_1.png" alt="">
+                <app-plat [platInput]="plat"></app-plat>
+            </div>
+        </div>  
+        
+    </div>
+</section>

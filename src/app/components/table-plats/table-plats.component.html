@@ -1,0 +1,22 @@
+<table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Price</th>
+        <th scope="col">Description</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let plat of plats">
+        <th scope="row">{{plat.id}}</th>
+        <td>{{plat.name}}</td>
+        <td>{{plat.price}}</td>
+        <td>{{plat.description}}</td>
+        <button class="btn btn-info" (click)="displayPlat(plat.id)">Display</button>
+        <button class="btn btn-warning" (click)="editPlat(plat.id)">Edit</button>
+        <button class="btn btn-danger" (click)="deletePlat(plat.id)">Delete</button>
+      </tr>
+    </tbody>
+  </table>

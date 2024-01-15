@@ -1,0 +1,26 @@
+<div class="container">
+<div class="row" style="margin-top: 150px;">
+    <div class="col-xl-5">
+        <div class="section_tittle">
+            <h2>Admin</h2>
+        </div>
+    </div>
+</div>
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Chefs</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Plats</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="user-tab" data-toggle="tab" href="#user" role="tab" aria-controls="user" aria-selected="false">Users</a>
+    </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"><app-table-chefs></app-table-chefs></div>
+    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"><app-table-plats></app-table-plats></div>
+    <div class="tab-pane fade" id="user" role="tabpanel" aria-labelledby="user-tab"><app-table-users></app-table-users></div>
+    
+  </div>
+</div>

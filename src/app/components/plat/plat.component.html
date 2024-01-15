@@ -1,0 +1,14 @@
+
+        <div class="single_blog_img">
+            <img [src]="platInput.image" alt="">
+        </div>
+        <div class="single_blog_text">
+            <h3>{{platInput.name}}</h3>
+            <h2 [ngClass]="{
+                'priceRed':  platInput.price > 0.5 && platInput.price < 10 ,
+                'priceBlue': platInput.price >= 10 && platInput.price < 30  ,
+                'priceOrange': platInput.price > 30
+              }">{{platInput.price}}</h2>
+            <button  class="btn btn-warning" style="margin-left: 80px;">Order</button>
+        </div>
+ 

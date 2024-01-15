@@ -1,0 +1,22 @@
+<table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Speciality</th>
+        <th scope="col">Experience</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let chef of chefs">
+        <th scope="row">{{chef.id}}</th>
+        <td>{{chef.name}}</td>
+        <td>{{chef.speciality}}</td>
+        <td>{{chef.experience}}</td>
+        <button class="btn btn-info" (click)="displayChef(chef.id)">Display</button>
+        <button class="btn btn-warning" (click)="editChef(chef.id)">Edit</button>
+        <button class="btn btn-danger" (click)="deleteChef(chef.id)">Delete</button>
+      </tr>
+    </tbody>
+  </table>
